@@ -10,4 +10,22 @@
     <button class="btn btn-light">
         Регистрация
     </button>
-</header>      
+    <div class=header__content>
+        <span>Становись</span>
+        <div class=bracket-bg></div>
+        <div style="grid-column: span 2">
+            <span class="inclined">
+                <a class=bg-danger>{JAVA}</a>-разработчиком
+            </span>
+            <br>
+            <div style="padding-left: 6.5ch">вместе с нами</div>
+        </div>
+        <div class=plus-bg>
+
+        </div>
+        <span class="buy-course">
+        Получи классную востребованную профессию и зарабатывай  дома 
+        в удобное время
+        </span>
+    </div>
+</header>

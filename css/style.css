@@ -5,22 +5,67 @@ body {
 }
 
 #header {
-    padding: 13px;
-    width: 100%;
-    height: fit-content;
-    background: #302D3D radial-gradient(
-        farthest-corner at 40px 40px,
-        rgba(255, 255, 255, 0.5),
-        transparent);
-    border-radius: 0 0 20px 20px;
-    padding-bottom: 20px;
     display: grid;
+    --margin-x: 13px;
+    --margin-y: 13px;
+    --padding-x: 10px;
+    --padding-y: 10px;
+    padding: var(--padding-y) var(--padding-x);
+    margin: var(--margin-y) var(--margin-x);
+    width: calc(100vw - var(--margin-x)*2);
+    height: fit-content;
+    
+    border-radius: 1em;
     gap: 8px;
-    grid-template-columns: auto 50% auto auto;
-    grid-template-rows: max-content;    
-}
+    grid-template-columns: auto 60% auto auto;
+    grid-template-rows: max-content;
+    background: 
+        radial-gradient(circle at 80% 115%, #aaaaaa 0, transparent 100px),
+        radial-gradient(circle at 30% -15%, #aaaaaa 0, #302D3D 100px);
 
-.btn {
+}
+#header .header__content {
+    display: grid;
+    grid-template-columns: auto 65%;
+    grid-template-rows: max-content max-content max-content;
+    grid-column: span 2;
+    color: #DEDCE7;
+    font-size: 3rem;
+}
+.header__content .buy-course {
+    font-size: 10pt !important;
+    width: 60%;
+    word-wrap: break-word;
+    text-align: left;
+}
+.inclined {
+    display: inline-block;
+    rotate: -2deg
+}
+.bracket-bg {
+    background: url(../img/bracket-bg.svg) no-repeat;
+    background-size: 100% 50%;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.plus-bg {
+    background: url(../img/plus-bg.svg) no-repeat;
+    transform: scale(0.8);
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+#header a {
+    color: inherit;
+    text-decoration: initial;
+}
+#header > * {
+    justify-self: center;
+    align-self: center;
+}
+#header .btn {
+    width: 100% !important;
     height: fit-content;
     line-height: 1.3em !important;
     border-radius: 1.3em !important;
