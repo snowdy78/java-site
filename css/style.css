@@ -8,7 +8,10 @@ body {
     padding: 13px;
     width: 100%;
     height: fit-content;
-    background: #302D3D radial-gradient();
+    background: #302D3D radial-gradient(
+        farthest-corner at 40px 40px,
+        rgba(255, 255, 255, 0.5),
+        transparent);
     border-radius: 0 0 20px 20px;
     padding-bottom: 20px;
     display: grid;
