@@ -1,0 +1,55 @@
+#main-content {
+    padding: 80px 80px;
+}
+
+.container > .row > * {
+    margin: 20px 0;
+}
+b {
+    font-weight: 600;
+}
+.header-3 {
+    font-weight: 600;
+    font-size: 24px;
+}
+.button-train {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.button-train a {
+    display: flex;
+    height: 80px;
+    background-color: var(--blue);
+    color: var(--bs-white);
+    text-decoration: none;
+    border-radius: 1.0em;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1em;
+    text-align: center;
+}
+.button-train .chain-container {
+    display: flex;
+    flex-direction: column;
+}
+.button-train .chain {
+    display: flex;
+    width: 2em;
+    height: calc(80px - 2em);
+    background:
+        radial-gradient(
+            circle at 50% 100%,
+            white calc(1em - 1px),
+            transparent 1em
+        ),
+        radial-gradient(
+            circle at 50% 0%,
+            transparent calc(1em - 1px),
+            var(--blue) 1em
+        );
+
+}
+.advantages > .row > * {
+    --bs-gutter-x: 2px
+}

@@ -1,0 +1,77 @@
+
+#header {
+    display: grid;
+    --padding-x: 10px;
+    --padding-y: 10px;
+    --padding-bottom: 60px;
+    padding: var(--padding-y) var(--padding-x);
+    padding-bottom: var(--padding-bottom);
+    width: calc(100vw - var(--margin-x)*2);
+    height: fit-content;
+    
+    border-radius: 1em;
+    gap: 8px;
+    grid-template-columns: auto 60% auto auto;
+    grid-template-rows: max-content;
+    background: 
+        radial-gradient(circle at 80% 115%, #aaaaaa 0, transparent 200px),
+        radial-gradient(circle at 30% -15%, #aaaaaa 0, var(--dark) 200px);
+
+}
+#header .header__content {
+    display: grid;
+    grid-template-columns: auto 65%;
+    grid-template-rows: max-content max-content max-content;
+    grid-column: span 4;
+    color: #DEDCE7;
+    font-size: 3rem;
+}
+.header__content .buy-course {
+    font-size: 10pt !important;
+    width: 60%;
+    word-wrap: break-word;
+    text-align: left;
+}
+
+#header a {
+    color: inherit;
+    text-decoration: initial;
+}
+#header > * {
+    justify-self: center;
+    align-self: center;
+}
+#header .btn {
+    width: 100% !important;
+    height: fit-content;
+    line-height: 1.3em !important;
+    border-radius: 1.3em;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+    align-self: center;
+}
+.logo-container {
+    height: inherit;
+}
+.logo {
+    max-width: 100px;
+    height: inherit
+}
+
+.border-quarter {
+    border-radius: 0.5rem !important;
+}
+#header .useful-refs {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+    grid-column: span 4;
+}
+.useful-refs a {
+    transform: translateY(calc(50% + 60px));
+    background-color: white;
+    border: 1px solid #302D3D;
+    border-radius: calc(1rem + 5px);
+    padding: 5px 5px; 
+    margin: 0 7px;
+}
