@@ -138,3 +138,13 @@ hr {
             var(--blink-color) 0, 
             var(--bg-color) var(--radius));
 }
+.logo-container {
+    height: inherit;
+}
+.logo {
+    max-width: 100px;
+    height: inherit;
+}
+.monochrom-invert {
+    filter: invert(1) hue-rotate(190deg) saturate(3.0);
+}

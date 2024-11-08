@@ -46,13 +46,6 @@
     padding-right: 25px !important;
     align-self: center;
 }
-.logo-container {
-    height: inherit;
-}
-.logo {
-    max-width: 100px;
-    height: inherit
-}
 
 .border-quarter {
     border-radius: 0.5rem !important;

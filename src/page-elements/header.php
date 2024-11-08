@@ -4,12 +4,12 @@
     </div>
     <div></div>
 
-    <button class="btn btn-light">
+    <a href="./login.php" class="btn btn-light">
         Вход
-    </button>
-    <button class="btn btn-light">
+    </a>
+    <a href="./register.php" class="btn btn-light">
         Регистрация
-    </button>
+    </a>
     <div class="header__content">
         <span>Становись</span>
         <div class="bracket-bg" ></div>
