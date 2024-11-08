@@ -13,10 +13,6 @@
     gap: 8px;
     grid-template-columns: auto 60% auto auto;
     grid-template-rows: max-content;
-    background: 
-        radial-gradient(circle at 80% 115%, #aaaaaa 0, transparent 200px),
-        radial-gradient(circle at 30% -15%, #aaaaaa 0, var(--dark) 200px);
-
 }
 #header .header__content {
     display: grid;
@@ -74,4 +70,9 @@
     border-radius: calc(1rem + 5px);
     padding: 5px 5px; 
     margin: 0 7px;
+}
+
+.useful-refs a:hover {
+    color: var(--primary-hover) !important;
+    border-color: var(--primary-hover);
 }

@@ -1,4 +1,4 @@
-<header id="header">
+<header id="header" class="bg-blinked">
     <div class="logo-container">
         <img src="img/logo.svg" class="logo"/>
     </div>
@@ -10,9 +10,9 @@
     <button class="btn btn-light">
         Регистрация
     </button>
-    <div class=header__content>
+    <div class="header__content">
         <span>Становись</span>
-        <div class=bracket-bg></div>
+        <div class="bracket-bg" ></div>
         <div style="grid-column: span 2">
             <span class="inclined">
                 <a class="text-white" style="background-color: #D0082C">{JAVA}</a>-разработчиком
@@ -32,7 +32,7 @@
                 </span>
             </div>
             <div style="width: 50% !important;text-align:center;">
-                <a class="btn btn-primary border-quarter" style="--bs-btn-font-size: 10pt;">
+                <a class="btn btn-primary back-primary border-quarter" style="--bs-btn-font-size: 10pt;">
                     Начать учится
                 </a>            
             </div>
