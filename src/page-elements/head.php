@@ -5,5 +5,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <script src="js/index.js"></script>
+
     <title>Bootstrap demo</title>
 </head>

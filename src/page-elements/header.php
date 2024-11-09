@@ -1,6 +1,8 @@
 <header id="header" class="bg-blinked">
     <div class="logo-container p-5">
-        <img src="img/logo.svg" class="logo"/>
+        <a href="index.php">
+            <img src="img/logo.svg" class="logo"/>
+        </a>
     </div>
     <div></div>
 
@@ -38,10 +40,15 @@
             </div>
         </div>
     </div>
-    <div class="useful-refs">
-        <a href="">Об обучении</a>
-        <a href="">Преимущества</a>
-        <a href="">Отзывы</a>
-        <a href="">Ценовая политика</a>
-    </div>
+    <?php 
+        if ($this->getPageName() == 'main') {
+            echo "
+            <div class='useful-refs' >
+                <button onclick='scrollToHeaderRef(AboutEducation)'>Об обучении</button>
+                <button onclick='scrollToHeaderRef(Advantages)'>Преимущества</button>
+                <button onclick='scrollToHeaderRef(Reviews)'>Отзывы</button>
+                <button onclick='scrollToHeaderRef(PricePolicy)'>Ценовая политика</button>
+            </div>";
+        }
+    ?>
 </header>

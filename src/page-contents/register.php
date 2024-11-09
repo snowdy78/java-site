@@ -7,11 +7,10 @@
 
     <div class="container">
         <div class="h2 text-center">
-            Вход
+            Регистрация
         </div>
-        
         <?php 
-            include "src/page-elements/login-form.php";
+            include "src/page-elements/register-form.php";
         ?>
     </div>
 </div>
