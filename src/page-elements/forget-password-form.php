@@ -1,4 +1,4 @@
-<form class="container d-flex flex-column justify-content-center">
+<form class="container d-flex flex-column justify-content-center" method="post" action="forget-password.php">
     <div class="row justify-content-center">
         <div class="col-6 text-center">
             Мы пришлем на почту инструкцию для восстановления пароля

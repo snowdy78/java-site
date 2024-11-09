@@ -13,5 +13,38 @@
         <?php 
             include "src/page-elements/login-form.php";
         ?>
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+                <?php
+                    include_once "src/DataBase.php";
+                    
+                    function login() {
+                        if ($_SERVER["REQUEST_METHOD"] != "POST") {
+                            return;
+                        }
+                        $db = new DataBase();
+                        if (
+                            empty($_POST["email"]) 
+                            || empty($_POST["password"]) 
+                        ) {
+                            throw new Exception("Please fill empty fields");
+                        }
+                        $email = $_POST["email"];
+                        $password = $_POST["password"];
+
+                        $db->loginUser($email, $password);
+                        echo "<div class='alert alert-success'>Вход прошел успешно</div>";  
+                    }
+                    try {
+                        login();
+                    } 
+                    catch (Exception $e) {;
+                        $err_message = $e->getMessage();
+                        echo "<div class='alert alert-danger'>$err_message</div>";
+                    }
+                ?>
+            </div>
+        </div>
+
     </div>
 </div>

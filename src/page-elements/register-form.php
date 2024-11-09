@@ -1,7 +1,7 @@
-<form class="container auth-form d-flex flex-column justify-content-center">
+<form class="container auth-form d-flex flex-column justify-content-center" method="post" action="register.php">
     <div class="row">
         <div class="col-12 input-group">
-            <input class="form-control" type="email" name="email" placeholder="Ваш email" />
+            <input class="form-control" name="email" type="email" placeholder="Ваш email" />
         </div>
     </div>
     <div class="row">

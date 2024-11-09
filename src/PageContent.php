@@ -7,7 +7,9 @@
         public function display(): void {
             echo "<!DOCTYPE html>";
             echo "<html>";
+            echo "<head>";
             include "src/page-elements/head.php";
+            echo "</head>";
             echo "<body>";
             $this->loadHeader();
             echo "<div id='main-content'>";
