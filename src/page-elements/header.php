@@ -1,5 +1,5 @@
 <header id="header" class="bg-blinked">
-    <div class="logo-container">
+    <div class="logo-container p-5">
         <img src="img/logo.svg" class="logo"/>
     </div>
     <div></div>

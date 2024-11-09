@@ -1,7 +1,7 @@
 <footer id="footer" class="bg-blinked text-white">
     <div class="d-flex flex-column justify-content-center">
         <div class="container fs-1">
-            <div class="row">
+            <div class="row justify-content-end">
                 
                 <div class="col-9 d-flex justify-content-end">
                     <div class="bracket-bg" style="min-width: initial"></div>
