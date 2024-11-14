@@ -44,10 +44,10 @@
         if ($this->getPageName() == 'main') {
             echo "
             <div class='useful-refs' >
-                <button class='header-ref' onclick='scrollToHeaderRef(AboutEducation)'>Об обучении</button>
-                <button class='header-ref' onclick='scrollToHeaderRef(Advantages)'>Преимущества</button>
-                <button class='header-ref' onclick='scrollToHeaderRef(Reviews)'>Отзывы</button>
-                <button class='header-ref' onclick='scrollToHeaderRef(PricePolicy)'>Ценовая политика</button>
+                <button class='header-ref header-ref-about' onclick='scrollToHeaderRef(AboutEducation)'>Об обучении</button>
+                <button class='header-ref header-ref-advantages' onclick='scrollToHeaderRef(Advantages)'>Преимущества</button>
+                <button class='header-ref header-ref-reviews' onclick='scrollToHeaderRef(Reviews)'>Отзывы</button>
+                <button class='header-ref header-ref-pricing' onclick='scrollToHeaderRef(PricePolicy)'>Ценовая политика</button>
             </div>";
         }
     ?>

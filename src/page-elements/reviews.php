@@ -1,5 +1,5 @@
 
-<div class="d-flex flex-row">
+<div class="d-flex flex-row reviews">
     <div class="col-2 fs-1 fw-semibold">
         Отзывы
     </div>

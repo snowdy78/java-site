@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row price-politics">
     <div class="fs-1 fw-semibold">
         Ценовая политика
     </div>
