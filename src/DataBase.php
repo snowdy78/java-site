@@ -4,7 +4,7 @@
     class PasswordsDontMatch extends Exception {}
     class DataBase extends mysqli {
         public function __construct() {
-            parent::__construct("localhost", "root", "", "java-site", 3306);
+            parent::__construct("localhost", "root", "", "java_site", 3306);
         }
         private function sessionControl() {
             if (session_status() == PHP_SESSION_NONE) {
