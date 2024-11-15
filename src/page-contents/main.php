@@ -131,7 +131,6 @@
             <h1 style="text-indent: 6ch">РАБОТОДАТЕЛЕЙ РОССИИ</h1>
         </div>
     </div>
-    
     <?php
         include "src/page-elements/advantages.php";
         include "src/page-elements/reviews.php";

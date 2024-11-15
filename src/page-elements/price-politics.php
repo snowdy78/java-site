@@ -18,10 +18,10 @@
                     35 000 за новую профессию — это выгодная сделĸа!
                 </div>
                 <div class="d-flex justify-content-center">
-                    <button class="btn btn-primary back-primary w-50">
+                    <a class="btn btn-primary back-primary w-50" href="profile.php">
                         <i class="logo-a"></i>
                         Начать учиться
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>

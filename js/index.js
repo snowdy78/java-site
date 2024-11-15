@@ -30,3 +30,6 @@ function scrollToHeaderRef(ref) {
         scrollTo(0, rect.top);
     }
 }
+function gotoPreviousPage() {
+    history.back();
+}

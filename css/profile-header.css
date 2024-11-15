@@ -1,0 +1,6 @@
+#profile-header {
+    display: grid;
+    width: 100%;
+    background-color: var(--dark);
+    height: 75px;
+}

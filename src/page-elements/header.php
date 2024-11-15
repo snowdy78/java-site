@@ -26,18 +26,23 @@
 
         </div>
         <div style="width: 50%">
-            <div style="line-height: 0;">
-                <span class="buy-course">
-                    Получи классную востребованную профессию и зарабатывай  дома 
-                    в удобное время
-                    
-                </span>
-            </div>
-            <div style="width: 50% !important;text-align:center;">
-                <a class="btn btn-primary back-primary border-quarter" style="--bs-btn-font-size: 10pt;">
-                    Начать учится
-                </a>            
-            </div>
+            <?php 
+                if ($this->getPageName() == 'main') {
+                    echo "
+                        <div style='line-height: 0;'>
+                            <span class='buy-course'>
+                                Получи классную востребованную профессию и зарабатывай  дома 
+                                в удобное время
+                                
+                            </span>
+                        </div>
+                        <div style='width: 50% !important;text-align:center;'>
+                            <a class='btn btn-primary back-primary border-quarter' style='--bs-btn-font-size: 10pt;'>
+                                Начать учится
+                            </a>            
+                        </div>";
+                }
+            ?>
         </div>
     </div>
     <?php 

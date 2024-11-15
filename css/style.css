@@ -3,6 +3,9 @@
 @import url("footer.css");
 @import url("main-content.css");
 @import url("auth.css");
+@import url("profile-header.css");
+@import url("profile-footer.css");
+
 @font-face {
     font-family: 'Inter';
     src: url("fonts/Inter.ttf");
@@ -30,11 +33,15 @@
     font-family: Inter;
 }
 body {
+    font-size: 12pt !important;
+}
+.unloginned {
     --padding-x: 13px;
     --padding-y: 13px;
     padding: var(--padding-y) var(--padding-x) 0 var(--padding-x) !important;
-
-    font-size: 12pt !important;
+}
+.loginned {
+    padding: 0 !important;
 }
 .f-primary {
     color: var(--primary);

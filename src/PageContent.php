@@ -4,13 +4,17 @@
         public function __construct() {
             self::$pages[$this->getPageName()] = $this;
         }
+        protected function getBodyClassName(): string {
+            return "unloginned";
+        }
         public function display(): void {
             echo "<!DOCTYPE html>";
             echo "<html>";
             echo "<head>";
             include "src/page-elements/head.php";
             echo "</head>";
-            echo "<body>";
+            $body_styling = $this->getBodyClassName();
+            echo "<body class='$body_styling'>";
             $this->loadHeader();
             echo "<div id='main-content'>";
             include "src/page-contents/".$this->getPageName().".php";
