@@ -25,8 +25,8 @@
                     throw new PasswordsDontMatch("Passwords don't match");
                 }
                 $query = "INSERT INTO `users`
-                    (`id`, `email`, `login`, `password`, `administrator`, `course_id`) VALUES 
-                    (DEFAULT, '$email', '$name', SHA1('$password'), DEFAULT, DEFAULT)";
+                    (`id`, `email`, `login`, `password`, `administrator`, `course_id`, `curator_id`) VALUES 
+                    (DEFAULT, '$email', '$name', SHA1('$password'), DEFAULT, DEFAULT, DEFAULT)";
                 if (!$this->query($query)) {
                     return new Exception("Unable to register user");
                 }

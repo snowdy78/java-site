@@ -1,0 +1,9 @@
+.history-block {
+    display: flex;
+    align-items: center;
+    height: 2em;
+}
+
+.history-block .history-element {
+    cursor: pointer;
+}

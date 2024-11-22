@@ -31,6 +31,10 @@
             }
             include 'src/page-elements/profile-header.php';
         }
+        protected function loadMainContent(): void {
+            include 'src/page-elements/history.php';
+            parent::loadMainContent();
+        }
         protected function loadFooter(): void {
             include 'src/page-elements/profile-footer.php';
         }
