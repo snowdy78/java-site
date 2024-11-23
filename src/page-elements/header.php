@@ -1,9 +1,7 @@
 <header id="header" class="bg-blinked">
-    <div class="logo-container p-5">
-        <a href="index.php">
-            <img src="img/logo.svg" class="logo"/>
-        </a>
-    </div>
+    <?php
+        include "src/page-elements/site-logo.php";
+    ?>
     <div></div>
 
     <a href="./login.php" class="btn btn-light">

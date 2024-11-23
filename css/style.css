@@ -122,15 +122,15 @@ hr {
     background-repeat: no-repeat;
 }
 .gutter-substract {
-    --bs-gutter-x: 0;
-    --bs-gutter-y: 0;
+    --bs-gutter-x: 0 !important;
+    --bs-gutter-y: 0 !important;
 }
 .gutter-x-substract {
-    --bs-gutter-x: 0;
+    --bs-gutter-x: 0 !important;
 }
 
 .gutter-y-substract {
-    --bs-gutter-y: 0;
+    --bs-gutter-y: 0 !important;
 }
 
 .bg-blinked {
