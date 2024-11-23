@@ -3,7 +3,7 @@
     include_once "src/PageContent.php";
     
     abstract class ProfilePage extends PageContent {
-        private $user = null;
+        protected $user = null;
         protected function getBodyClassName(): string {
             return 'loginned';
         }

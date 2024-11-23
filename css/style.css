@@ -5,7 +5,7 @@
 @import url("auth.css");
 @import url("profile-header.css");
 @import url("profile-footer.css");
-
+@import url("curator-watch.css");
 @font-face {
     font-family: 'Inter';
     src: url("fonts/Inter.ttf");

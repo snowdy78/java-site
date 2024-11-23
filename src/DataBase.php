@@ -78,6 +78,24 @@ class DataBase extends mysqli
         }
         return $user;
     }
+    public function updateUser($user_id, array $columns, array $values): bool {
+        if (empty($columns)) {
+            return true;
+        }
+        $columns_size = sizeof($columns);
+        $values_size = sizeof($values);
+        if ($columns_size != $values_size) {
+            throw new Exception("not all columns are updated");
+        }
+        $query = "UPDATE `users` SET ";
+        for ($i = 0; $i < $columns_size; $i++) {
+            $column = $columns[$i];
+            $value = $values[$i];
+            $query .= $column."=".$value." ";
+        }
+        $query .= "WHERE id=$user_id";
+        return !!$this->query($query);
+    }
     public function getAllUsers($selector = '')
     {
         $query = "SELECT * FROM `users`".(empty($selector) ? "" : ("WHERE ".$selector));
