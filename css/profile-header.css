@@ -1,8 +1,12 @@
+:root {
+    --profile-header-height: 75px;
+}
+
 #profile-header {
     display: grid;
     width: 100%;
     background-color: var(--dark);
-    height: 75px;
+    height: var(--profile-header-height);
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 100%;
 }

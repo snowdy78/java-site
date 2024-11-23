@@ -12,10 +12,6 @@
             }
         }
     }
-    if (empty($this->user)) {
-        echo "<script>history.back();</script>";
-        exit;
-    }
     $db = new DataBase();
     $curator = $this->user;
     if ($curator['administrator'] == '0') {

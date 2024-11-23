@@ -1,6 +1,9 @@
+:root {
+    --profile-footer-height: 75px;
+}
 #profile-footer {
     display: grid;
     width: 100%;
     background-color: var(--dark);
-    height: 75px;
+    height: var(--profile-footer-height);
 }
