@@ -4,15 +4,15 @@
     ?>
     <div></div>
 
-    <a href="./login.php" class="btn btn-light">
+    <a href="./login.php" class="btn btn-light header-btn__log-in">
         Вход
     </a>
-    <a href="./register.php" class="btn btn-light">
+    <a href="./register.php" class="btn btn-light header-btn__sign-in">
         Регистрация
     </a>
     <div class="header__content">
         <span>Становись</span>
-        <div class="bracket-bg" ></div>
+        <div class="bracket-bg" style="width: 0"></div>
         <div style="grid-column: span 2">
             <span class="inclined">
                 <a class="text-white" style="background-color: #D0082C">{JAVA}</a>-разработчиком
@@ -23,7 +23,7 @@
         <div class=plus-bg>
 
         </div>
-        <div style="width: 50%">
+        <div style="width: 80%">
             <?php 
                 if ($this->getPageName() == 'main') {
                     echo "
