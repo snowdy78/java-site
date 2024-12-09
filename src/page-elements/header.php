@@ -11,14 +11,14 @@
         Регистрация
     </a>
     <div class="header__content">
-        <span>Становись</span>
+        <span class="H_H">Становись</span>
         <div class="bracket-bg" style="width: 0"></div>
         <div style="grid-column: span 2">
-            <span class="inclined">
+            <span class="H_H inclined">
                 <a class="text-white" style="background-color: #D0082C">{JAVA}</a>-разработчиком
             </span>
             <br>
-            <div style="padding-left: 6.5ch">вместе с нами</div>
+            <div class="H_H" style="padding-left: 6.5ch">вместе с нами</div>
         </div>
         <div class=plus-bg>
 
