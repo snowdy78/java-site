@@ -29,6 +29,50 @@ b {
     padding: 0 1em;
     text-align: center;
 }
+@media screen and (max-width: 768px) {
+    .button-train {
+        flex-direction: column;
+    }
+    .button-train a {
+        width: 100%;
+        height: 3em;
+        border-radius: 30px !important;
+    }
+    .button-train .chain {
+        width: 2.5em !important;
+        height: 1.5em !important;
+        --circle-size: 0.75em;
+        background:
+            radial-gradient(
+                circle at 0% 50%,
+                white calc(var(--circle-size) - 1px),
+                transparent var(--circle-size)
+            ),
+            radial-gradient(
+                circle at 100% 50%,
+                transparent calc(var(--circle-size) - 1px),
+                var(--blue) var(--circle-size)
+            ) !important;
+    }
+    .button-train .chain-container {
+        position: relative;
+    }
+    .button-train > .chain-container:nth-child(2) {
+        left: -5%;
+    }
+    
+    .button-train > .chain-container:nth-child(4) {
+        left: 10%;
+    }
+    
+    .button-train > .chain-container:nth-child(6) {
+        left: -20%;
+    }
+    
+    .button-train > .chain-container:nth-child(8) {
+        left: 10%;
+    }
+}
 .button-train .chain-container {
     display: flex;
     flex-direction: column;
